@@ -7,21 +7,50 @@
     <title>Portfolio Giovana Wosniak</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="img/eu.jpeg" type="image/x-icon">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <img src="img/eu.jpeg" alt="">
+
+        <div class="header">
+            <div class="checkbox-container"></div>
+                <div class="checkbox-wrapper"></div>
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="projetos.html">Projetos</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+        </div>
+
         <h1>Giovana Wosniak</h1>
         <h2>Front-End Developer</h2>
-        <section id="social-media">
-            <a href="https://www.linkedin.com/in/giovana-wosniak/" target="_blank">
+
+        <section class="social-media">
+            <a href="https://www.linkedin.com/in/giovana-wosniak20525/">
                 <img src="img/logo-linkedin.png" alt="">
             </a>
-
-            <a href="https://www.github.com/giowosniak" target="_blank">
-                <img src="img/logo-github.jpg" alt="">
+            <a href="https://github.com/giowosniak"><img src="img/logo-github.jpg" alt="">
             </a>
         </section>
+       
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
@@ -31,12 +60,12 @@
         </menu>
     </header>
 
-    <main>
+    <main class="container">
         <a href="curriculo.html" style="text-decoration: none;">
             <div class="card-container">
             <div class="card1">
                 <div class="card-wrapper"> 
-                    <h2>Currículo</h2>
+                    <h3>Currículo</h3>
                     <p>Clique aqui</p>
                 </div> 
             </div>
@@ -46,31 +75,22 @@
             </div>
         </div>
     </a>
-        <div class="card-container">
-            <div class="card2">
-                <div class="card-wrapper">
-                    <h2>Projetos</h2>
-                    <p>Em construção...</p>
+        <a href="projetos.html" style="text-decoration: none;">
+            <div class="card-container">
+                <div class="card2">
+                    <div class="card-wrapper">
+                        <h3>Projetos</h3>
+                        <p>Em construção...</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    Aqui estão meus primeiros projetos na área de programação! <br>
+                    Apenas o início da caminhada.
+            
                 </div>
             </div>
-            <div class="card-text">
-                Aqui estão meus primeiros projetos na área de programação! <br>
-                Apenas o início da caminhada.
-                
-            </div>
-        </div>
+        </a>
         <a href="contato.html" style="text-decoration: none;"><div class="card-container"></div>
-        <div class="card-container">
-            <div class="card3">
-                <div class="card-wrapper">
-                    <h2>Contato</h2>
-                    <p></p>
-                </div>
-            </div>
-            <div class="card-text">
-               Formulário para contato.
-            </div>
-        </div>
     </main>
 
     <footer class="footer">
@@ -94,7 +114,7 @@
             if (window.innerWidth >= 992) {
                 itens.style.display = 'block'
             } else {
-                iten.style.display = 'none'
+                itens.style.display = 'none'
             }
         }
     </script>

@@ -1,0 +1,635 @@
+
+/* *{
+    background-color: #190563;
+ }*/
+ @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Phudu&display=swap');
+
+ :root {
+    --cor01: #5593A6;
+    --cor02: #A68565;
+    --cor03: #FFE7CF;
+    --cor04: #F2CEAB;
+    --cor05: #ACE2F2;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #10121A;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+    color: #ebebeb;
+}
+
+/*header*/
+
+
+/* MENU HAMBURGUER*/
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+    
+}
+.checkbox:hover{
+    background-color: #267fa5;
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: #ebebeb;
+    position: absolute;
+    border-radius: 4px;
+    transition: .5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1){
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2){
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3){
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+/*menu*/
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #ebebeb;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-items ul {
+    list-style-type: none;
+}
+
+.menu-items li a:hover {
+    background-color: #267fa5;
+    color: var(--cor04);
+    border-radius: 20%;
+    position: relative;
+    left: 10%;
+}
+
+.menu-items ul li a {
+    margin: 10px 0;
+    color: #ebebeb;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+/*animação do menu*/
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 48px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: #267fa5;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax #267fa5;
+    z-index: 1;
+}
+
+#toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;
+}
+/*skills*/
+/*.skills {
+    display: block;
+}*/
+
+.skills h2 {
+    color: #ebebeb;
+    font-size: 3.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 3rem;
+    padding-left: 6rem;
+}
+
+
+.title .decoration {
+    position: relative;
+    top: 0;
+    left: 102px;
+    width: 7.4rem;
+    height: 0.33rem;
+    background-color: rgb(93, 145, 241);
+    border-radius: 15px;
+    
+}
+
+.title .decoration .color {
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    width: 3.5rem;
+    height: 0.33rem;
+    background-color: #5d557a;
+    border-radius: 15px;
+    left: 0px;
+}
+
+.estrutura {
+   
+    padding: 2px 96px 30px 96px;
+    
+}
+
+.skills1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+}
+
+h6 {
+    color: #ebebeb;
+    font-size: 1.2rem;
+    padding-bottom: 1px;
+    margin-bottom: 7px;
+}
+
+.html .progress-bar {
+    display: flex;
+   -webkit-box-align: center;
+    align-items: center;
+}
+
+.html .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.html .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.html .progress-bar .progress .barra {
+    position: absolute;
+    width: 45%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+.css .progress-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.css .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.css .progress-bar .progress .barra {
+    position: absolute;
+    width: 50%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+.java .progress-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.java .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.java .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.java .progress-bar .progress .barra {
+    position: absolute;
+    width: 25%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+.react .progress-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.react .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.react .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.react .progress-bar .progress .barra {
+    position: absolute;
+    width: 25%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+.fire .progress-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.fire .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.fire .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.fire .progress-bar .progress .barra {
+    position: absolute;
+    width: 30%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+.git .progress-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.git .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.git .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.git .progress-bar .progress .barra {
+    position: absolute;
+    width: 40%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+
+
+.idioma {
+    padding: 2px 96px 40px 96px;
+         }
+
+.title1 .decoration1 {
+position: relative;
+top: 125px;
+bottom: 0px;
+left: 100px;
+width: 7.4rem;
+height: 0.33rem;
+background-color: rgb(93, 145, 241);
+border-radius: 15px;
+}
+        
+.title1 .decoration1 .color1 {
+position: relative;
+top: 0px;
+bottom: 35px;
+width: 3.5rem;
+height: 0.33rem;
+background-color: #5d557a;
+border-radius: 15px;
+left: 0px;
+        }
+
+.idioma1 .progress-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+        }
+
+.idioma1 .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.idioma1 .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.idioma1 .progress-bar .progress .barra {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+.idioma2 .progress-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.idioma2 .progress-bar p {
+    padding-right: 1.1rem;
+}
+
+.idioma2 .progress-bar .progress {
+    position: relative;
+    width: 70%;
+    height: 0.6rem;
+    background-color:#5d557a;
+}
+
+.idioma2 .progress-bar .progress .barra {
+    position: absolute;
+    width: 50%;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(93, 145, 241);
+}
+
+.estrutura-curriculo {
+    padding: 2px 96px 30px 96px;
+}
+
+.curriculo .small-title {
+    padding-bottom: 1rem;
+}
+
+.experiencia {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.experiencia p {
+    padding: 1rem 1rem 0 0 ;
+}
+
+.experiencia p svg {
+    font-size: 3rem;
+    
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.experiencia h3 {
+    color: #ebebeb;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.curriculo .resume-content {
+    border-left: 2px solid #06638b;
+}
+
+/*.resumo:not(:last-child) {
+    padding-bottom: 3rem;
+}*/
+
+.resumo-exp .left-content {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.resumo-exp .left-content p {
+    display: inline-block;
+}
+
+.resumo-exp .right-content {
+   position: relative;
+   left: 10rem;
+   bottom: 8rem;
+   height: 2px;
+   width: 30rem;
+   margin-bottom: 8rem;
+   
+}
+
+.resumo-exp .right-content h5 {
+    color: #267fa5;
+    font-size: 1.5rem;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom: 0;
+}
+
+.resumo-exp .right-content p {
+    font-size: 1rem;
+    padding-top: 1px;
+    margin-bottom: 10rem;
+    color: #a8a8a8;
+}
+
+/*escolaridade*/
+
+.estrutura-curriculo .small-title-margin {
+    margin-top: 4rem;
+}
+
+.titulo-educacao {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.titulo-educacao p {
+    padding-right: 1rem;
+}
+
+.titulo-educacao p svg {
+    font-size: 3rem;
+
+}
+
+.titulo-educacao h3 {
+    color:#ebebeb;
+    font-size: 2rem;
+}
+
+.resumo-educacao .resume-content {
+    border-left: 2px solid #06638b;
+}
+
+.resumo-educacao .resumo {
+    margin-bottom: 200px;
+}
+
+.resumo-educacao .resumo .left-content {
+    width: 50%;
+    height: 50%;
+    padding-left: 20px;
+}
+
+.resumo-educacao .resumo .left-content p {
+    display: inline-block;
+}
+
+.resumo-educacao .resumo .right-content {
+    position: relative;
+    left: 10rem;
+    bottom: 7rem;
+    height: 2px;
+    width: 30rem;
+}
+
+.resumo-educacao .resumo .right-content h5 {
+    color: #267fa5;
+    font-size: 1.5rem;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.resumo-educacao .resumo .right-content h6 {
+    color: #ebebeb;
+    padding-bottom: 0.6rem;
+    padding-top: 0.4rem;
+    margin: 0.4rem 0 0.4rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.resumo-educacao .resumo .right-content p {
+    font-size: 1rem;
+    padding-top: 1px;
+    padding: 1px 0 1rem;
+    color: #a8a8a8;
+}
+
+.baixar a {
+    margin-left: 40%;
+    margin-right: 40%;
+    text-decoration: none;
+    color: #868585;
+    padding: 13px 18px;
+    margin-bottom: 3rem;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.baixar a:hover {
+    background-color: var(--cor01);
+    color: black;
+}

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+    html, body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .estrutura {
+        padding-left: 30px;
+        padding-bottom: 0px;
+    }
+
+    .skills h2 {
+        padding-left: 2rem;
+        font-size: 2.2em;
+    }
+
+    .title2 h2 {
+        font-size: 2.2em;
+        position: relative;
+        
+    }
+
+    .idioma {
+        padding: 2px 2rem 40px 2rem;
+             }
+
+    .title2 .title1 .decoration1 .color1 {
+        display: none;
+
+    
+    }
+
+    .estrutura-curriculo {
+        padding-left: 2rem;
+    }
+
+    .experiencia h3 {
+        font-size: 2em;
+    }
+
+    .curriculo .resume-content {
+        border: none;
+
+       
+    }
+
+    .resumo-exp .left-content {
+        padding-left: 5px;
+    }
+
+    .resumo-exp .left-content p {
+        font-size: 14px;
+    }
+
+    .resumo-exp .right-content {
+        position: relative;
+        
+        left: 5rem;
+        bottom: 8rem;
+        height: 2px;
+        width: 20rem;
+    }
+
+    .resumo-exp .right-content h5 {
+        padding-top: 30px;
+        margin-bottom: 1px;
+        padding-bottom: 2px;
+        font-size: 18px;
+        color:  #267fa5;
+    }
+
+    .resumo-exp .right-content p {
+        margin-top: 1px;
+        padding-top: 1px;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+   
+    .titulo-educacao h3 {
+        font-size: 2em;
+    }
+
+    .resumo-educacao .resumo .left-content {
+        padding-left: 5px;
+        font-weight: bolder;
+    }
+
+    .resumo-educacao .resumo .right-content {
+        position: relative;
+        left: 5rem;
+        bottom: 7rem;
+    }
+
+    .resumo-educacao .resumo .right-content h5 {
+        font-size: 18px;
+        padding-top: 3px;
+        margin-bottom: 1px;
+        padding-bottom: 1px;
+        padding-left: 10px;
+        width: 20rem;
+        text-transform: uppercase;
+    }
+
+    .resumo-educacao .resumo .right-content h6 {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-bottom: 1px;
+        margin-top: 1px;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+    }
+
+    .resumo-educacao .resumo .right-content p {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-bottom: 1px;
+        width: 20rem;
+    }
+
+    .baixar a {
+        width: 150px;
+        margin-top: 1px;
+     
+    }
+
+
+
+
+}
