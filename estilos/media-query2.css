@@ -1,23 +1,66 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 500px) and (max-width: 768px){
+@media screen and (min-width: 500px) and (max-width: 775px) {
     html, body {
         padding: 0px;
         margin: 0px;
     }
 
     .estrutura {
-        padding-left: 30px;
+        padding-left: 15px;
+        padding-right: 10px;
         padding-bottom: 0px;
     }
 
     .skills h2 {
         padding-left: 2rem;
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
+    .skills h6 {
+        font-size: 1em;
+    }
+
+    .skills1 {
+        gap: 2rem 8rem;
+    }
+
+    .html .progress-bar p {
+        padding-right: 0.3rem;
+    }
+
+    .html .progress-bar .progress {
+        position: relative;
+        width: 100%;
+        height: 0.6rem;
+        background-color:#5d557a;
+    }
+
+    .css .progress-bar p {
+        padding-right: 0.3rem;
+    }
+
+    .java .progress-bar p {
+        padding-right: 0.3rem;
+    }
+
+    .react .progress-bar p {
+        padding-right: 0.3rem;
+    }
+
+    .fire .progress-bar p {
+        padding-right: 0.3rem;
+    }
+
+    .git .progress-bar p {
+        padding-right: 0.3rem;
+    }
+
+
+
     .title2 h2 {
-        font-size: 2.2em;
+        padding-left: 2rem;
+        font-size: 2em;
         position: relative;
         
     }
@@ -26,11 +69,9 @@
         padding: 2px 2rem 40px 2rem;
              }
 
-    .title2 .title1 .decoration1 .color1 {
+     .title1 .decoration1 {
         display: none;
-
-    
-    }
+     }
 
     .estrutura-curriculo {
         padding-left: 2rem;
