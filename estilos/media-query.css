@@ -149,17 +149,15 @@
     
     .menu-items ul {
         list-style-type: none;
+        margin: auto;
     }
     
     .menu-items li a:hover {
         color:var(--cor04);
-        position: relative;
-        left: 10%;
+        
     }
     
     .menu-items ul li a {
-        padding: 50px;
-        margin: 10px 0;
         color: #ebebeb;
         text-decoration: none;
         text-transform: uppercase;
