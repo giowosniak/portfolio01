@@ -116,9 +116,6 @@ html, body {
 .menu-items li a:hover {
     background-color: #267fa5;
     color: var(--cor04);
-    border-radius: 20%;
-    position: relative;
-    left: 10%;
 }
 
 .menu-items ul li a {
