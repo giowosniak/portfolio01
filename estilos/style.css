@@ -17,10 +17,11 @@
     --cor05: #ACE2F2;
 }
 
-html, body {
+html {
     overflow-x: hidden;
     background-color: #ACE2F2;
     width: 100vw;
+    height: 100vh;
 }
 
 header {
