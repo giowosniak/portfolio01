@@ -316,7 +316,7 @@ h6 {
 
 .react .progress-bar .progress .barra {
     position: absolute;
-    width: 25%;
+    width: 35%;
     left: 0px;
     bottom: 0px;
     height: 100%;
@@ -342,7 +342,7 @@ h6 {
 
 .fire .progress-bar .progress .barra {
     position: absolute;
-    width: 30%;
+    width: 40%;
     left: 0px;
     bottom: 0px;
     height: 100%;
