@@ -135,9 +135,8 @@ body {
     list-style-type: none;
 }
 
-.menu-items li:hover {
-    background-color: #267fa5;
-    border-radius: 20%;
+.menu-items li a:hover {
+    color: #A68565;
     position: relative;
     left: 10%;
 }
