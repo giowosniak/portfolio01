@@ -567,6 +567,10 @@ left: 0px;
     margin-bottom: 200px;
 }
 
+.resumo-educacao .resumo:nth-child(3) {
+    padding-top: 100px;
+}
+
 .resumo-educacao .resumo .left-content {
     width: 50%;
     height: 50%;

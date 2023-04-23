@@ -136,6 +136,10 @@
         font-size: 2em;
     }
 
+    .resumo-educacao .resumo:nth-child(3) {
+        padding-top: 100px;
+    }
+
     .resumo-educacao .resumo .left-content {
         padding-left: 0px;
         font-size: 0.8em;
@@ -179,6 +183,7 @@
     .baixar a {
         width: 150px;
         margin-top: 1px;
+        margin-left: 150px;
      
     }
 

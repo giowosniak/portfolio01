@@ -17,11 +17,11 @@
     --cor05: #ACE2F2;
 }
 
-html {
+html, body {
     overflow-x: hidden;
     background-color: #ACE2F2;
     width: 100vw;
-    height: 100vh;
+    
 }
 
 header {
@@ -132,7 +132,6 @@ menu#itens li a:hover {
 
 .container {
     background-color: var(--cor02);
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
