@@ -8,14 +8,50 @@
     --cor05: #ACE2F2;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 320px) and (max-width: 667px) {
+
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    header p {
+        text-align: center;
+        font-size: 1em;
+        
+        
+    }
 
     .container img {
         width: 50%;
-        margin-left: 200px;
-        width: 350px;
+        margin-left: 10px;
+        width: 250px;
     }
 
+}
+
+@media screen and (min-width: 667px) and (max-width: 992px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        text-align: center;
+        font-size: 1.3em;
+
+        
+        
+    }
+
+    .container img {
+        width: 50%;
+        margin-left: 100px;
+        width: 450px;
+    }
+
+    .container p {
+        width: 400px;
+        margin-left: 120px;
+    }
 }
 
 @media screen and (min-width: 992px) {

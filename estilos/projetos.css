@@ -176,6 +176,7 @@ header h1{
 }
 
 header p {
+    text-align: center;
     font-size: 1.3em;
     text-transform: uppercase;
     
